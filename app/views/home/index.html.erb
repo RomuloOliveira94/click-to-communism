@@ -1,7 +1,15 @@
 <div class="container">
+  <div class="text-container" >
+    <h3>Click the button to join the revolution!</h3>
+    <%= render "home/clicks_count", clicks_from_ip: @clicks_from_ip, clicks_count: @clicks_count %>
+  </div>
   <div class="button-container">
-    <button class="btn">
-      <%= image_tag "soviet.png", width: "150px", height: "150px" %>
-    </button>
+    <%= form_with model: @click, url: clicks_path, method: :post do |f| %>
+      <%= f.hidden_field :ip_address, value: request.remote_ip %>
+      <%= f.hidden_field :user_agent, value: request.user_agent %>
+      <button class="btn">
+        <%= image_tag "soviet.png", width: "150px", height: "150px" %>
+      </button>
+    <% end %>
   </div>
 </div>

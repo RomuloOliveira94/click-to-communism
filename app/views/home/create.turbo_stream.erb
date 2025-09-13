@@ -1,0 +1,3 @@
+<%= turbo_stream.update "clicks_count" do %>
+  <%= render "clicks_count", clicks_from_ip: @clicks_from_ip, clicks_count: @clicks_count %>
+<% end %>

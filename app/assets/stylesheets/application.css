@@ -31,6 +31,10 @@ body {
   height: 50lvh;
 }
 
+.text-container {
+  text-align: center;
+}
+
 .btn {
   display: flex;
   justify-content: center;
