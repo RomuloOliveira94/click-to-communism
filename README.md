@@ -4,7 +4,7 @@
 
 Welcome to the most revolutionary clicking experience on the internet! Join millions of comrades in the global movement to establish the ultimate communist utopia through the power of... clicking a button. Because that's definitely how revolutions work, right? 🤔
 
-## 🌟 What is this glorious project?
+## What is this project?
 
 Click to Communism is a simple yet powerful web application where users can contribute to the worldwide communist revolution by clicking a Soviet-themed button. Each click brings us one step closer to achieving true equality and collective ownership of... well, this click counter.
 

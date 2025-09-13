@@ -20,7 +20,6 @@ body {
   position: relative;
 }
 
-/* Marca d'água das mãos revolucionárias */
 body::before {
   content: "";
   position: fixed;
@@ -37,7 +36,6 @@ body::before {
   pointer-events: none;
 }
 
-/* Ajustes para mobile - altura menor */
 @media (max-width: 768px) {
   body::before {
     height: 150px;
@@ -81,7 +79,6 @@ body::before {
   transform: translateY(3px);
 }
 
-/* Footer styles */
 .footer {
   position: fixed;
   bottom: 20px;
@@ -117,7 +114,6 @@ body::before {
   fill: currentColor;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
   .footer {
     bottom: 10px;
