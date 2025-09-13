@@ -1,0 +1,10 @@
+# Arquivo de locale para português brasileiro
+# Usado para internacionalização da aplicação Click to Communism
+
+pt-BR:
+  home:
+    index:
+      title: "Clique no botão para se juntar à revolução!"
+    clicks_count:
+      your_clicks: "Você clicou:"
+      total_clicks: "Total de Cliques:"

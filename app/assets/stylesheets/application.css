@@ -17,6 +17,31 @@ body {
   padding: 0;
   background-color: #f0f0f0;
   color: #333;
+  position: relative;
+}
+
+/* Marca d'água das mãos revolucionárias */
+body::before {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100lvw;
+  height: 200px;
+  background-image: url('revolutionary-hands.png');
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: auto 100%;
+  opacity: 0.08;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Ajustes para mobile - altura menor */
+@media (max-width: 768px) {
+  body::before {
+    height: 150px;
+  }
 }
 
 .container {

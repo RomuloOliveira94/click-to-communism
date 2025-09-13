@@ -29,3 +29,9 @@
 
 en:
   hello: "Hello world"
+  home:
+    index:
+      title: "Click the button to join the revolution!"
+    clicks_count:
+      your_clicks: "You clicked:"
+      total_clicks: "Total Clicks:"
