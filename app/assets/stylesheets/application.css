@@ -8,3 +8,45 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+body {
+  font-family: "Russo One", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50lvh;
+}
+
+.btn {
+  background-color: #ec0002;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:active {
+  transform: translateY(3px);
+}
+
+
