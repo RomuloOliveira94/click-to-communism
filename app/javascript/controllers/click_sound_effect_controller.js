@@ -10,6 +10,7 @@ export default class extends Controller {
     if (this.audio.currentTime > 0) {
       this.audio.currentTime = 0;
     }
+    this.audio.volume = 0.2;
     this.audio.play();
   }
 }

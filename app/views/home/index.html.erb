@@ -9,7 +9,6 @@
       <%= f.hidden_field :user_agent, value: request.user_agent %>
       <button class="btn" data-action="click->click-sound-effect#playSound" type="submit">
         <%= image_tag "soviet.png", width: "150px", height: "150px" %>
-        <%= audio_tag "click.ogg", controls: true %>
       </button>
     <% end %>
   </div>
