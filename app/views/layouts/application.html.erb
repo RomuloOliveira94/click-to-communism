@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= content_for(:title) || "Click To Communism" %></title>
+    <title><%= content_for(:title) || t('meta.title') %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="<%= t('meta.description') %>">
+    <meta name="keywords" content="<%= t('meta.keywords') %>">
+    <meta name="author" content="<%= t('meta.author') %>">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="theme-color" content="#ec0002">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="<%= t('meta.og.title') %>">
+    <meta property="og:description" content="<%= t('meta.og.description') %>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= request.original_url %>">
+    <meta property="og:image" content="<%= asset_url('icon.png') %>">
+    <meta property="og:image:alt" content="<%= t('meta.og.image_alt') %>">
+    <meta property="og:site_name" content="<%= t('meta.og.site_name') %>">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= t('meta.twitter.title') %>">
+    <meta name="twitter:description" content="<%= t('meta.twitter.description') %>">
+    <meta name="twitter:image" content="<%= asset_url('icon.png') %>">
+    <meta name="twitter:image:alt" content="<%= t('meta.twitter.image_alt') %>">
+    <meta name="twitter:creator" content="<%= t('meta.twitter.creator') %>">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="application-name" content="<%= t('meta.application.name') %>">
+    <meta name="msapplication-TileColor" content="#ec0002">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 

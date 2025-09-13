@@ -1,4 +1,7 @@
 <%= turbo_frame_tag "clicks_count" do %>
-  <p><%= t('home.clicks_count.your_clicks') %> <%= clicks_from_ip %></p>
+  <p>
+    <%= t('home.clicks_count.your_clicks') %>
+    <%= clicks_from_ip %>
+  </p>
   <%= render 'home/clicks_counter', clicks_count: clicks_count %>
 <% end %>

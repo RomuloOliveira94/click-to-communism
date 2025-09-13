@@ -35,3 +35,20 @@ en:
     clicks_count:
       your_clicks: "You clicked:"
       total_clicks: "Total Clicks:"
+  meta:
+    title: "Click To Communism - Join the Revolution One Click at a Time!"
+    description: "Join the revolutionary clicking experience! Click the Soviet button to contribute to the global communist revolution. Track your clicks and join millions of comrades worldwide."
+    keywords: "click game, communist revolution, soviet button, clicking game, revolution simulator, communist clicker, soviet union, red button"
+    author: "Rômulo Oliveira"
+    og:
+      title: "Click To Communism - Join the Revolution One Click at a Time!"
+      description: "The most revolutionary clicking experience on the internet! Join millions of comrades in establishing the ultimate communist utopia through the power of clicking."
+      image_alt: "Soviet Revolutionary Button - Click to join the communist revolution"
+      site_name: "Click To Communism"
+    twitter:
+      title: "Click To Communism - Revolutionary Clicking Game"
+      description: "Seize the means of production, one click at a time! Join the global communist revolution through clicking."
+      image_alt: "Soviet Revolutionary Button"
+      creator: "@RomuloOliveira94"
+    application:
+      name: "Click To Communism"

@@ -27,7 +27,7 @@ body::before {
   left: 0;
   width: 100lvw;
   height: 200px;
-  background-image: url('revolutionary-hands.png');
+  background-image: url("revolutionary-hands.png");
   background-repeat: repeat-x;
   background-position: bottom center;
   background-size: auto 100%;
@@ -36,10 +36,17 @@ body::before {
   pointer-events: none;
 }
 
-@media (max-width: 768px) {
-  body::before {
-    height: 150px;
-  }
+h1 {
+  text-align: center;
+  color: #ec0002;
+  margin-bottom: 10px;
+  font-size: 28px;
+  text-transform: uppercase;
+} 
+
+p {
+  text-align: center;
+  font-size: 18px;
 }
 
 .container {
@@ -72,14 +79,14 @@ body::before {
   cursor: pointer;
   border-radius: 100%;
   transition: all 0.15s ease;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-tap-highlight-color: transparent;
   touch-action: pan-y;
 }
 
 .btn:active {
   transform: translateY(4px) scale(0.96);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5), 0 1px 5px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 1px 5px 0 rgba(0, 0, 0, 0.4);
   filter: brightness(0.8) contrast(1.2);
 }
 
@@ -91,7 +98,7 @@ body::before {
   color: white;
   padding: 10px 15px;
   border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: all 0.3s ease;
 }
@@ -99,7 +106,7 @@ body::before {
 .footer:hover {
   background-color: rgba(236, 0, 2, 1);
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .github-link {
@@ -119,12 +126,16 @@ body::before {
 }
 
 @media (max-width: 768px) {
+  body::before {
+    height: 150px;
+  }
+
   .btn {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
   }
-  
+
   .btn:hover {
     background-color: #ec0002; /* Remove hover on mobile */
   }
@@ -134,15 +145,13 @@ body::before {
     right: 10px;
     padding: 8px 12px;
   }
-  
+
   .github-link {
     font-size: 12px;
   }
-  
+
   .github-icon {
     width: 18px;
     height: 18px;
   }
 }
-
-

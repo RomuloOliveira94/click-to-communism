@@ -8,3 +8,20 @@ pt-BR:
     clicks_count:
       your_clicks: "Você clicou:"
       total_clicks: "Total de Cliques:"
+  meta:
+    title: "Click To Communism - Junte-se à Revolução um Clique por Vez!"
+    description: "Junte-se à experiência revolucionária de cliques! Clique no botão soviético para contribuir com a revolução comunista global. Acompanhe seus cliques e junte-se a milhões de camaradas pelo mundo."
+    keywords: "jogo de clique, revolução comunista, botão soviético, jogo de cliques, simulador de revolução, clicker comunista, união soviética, botão vermelho"
+    author: "Rômulo Oliveira"
+    og:
+      title: "Click To Communism - Junte-se à Revolução um Clique por Vez!"
+      description: "A experiência de cliques mais revolucionária da internet! Junte-se a milhões de camaradas para estabelecer a utopia comunista definitiva através do poder dos cliques."
+      image_alt: "Botão Revolucionário Soviético - Clique para se juntar à revolução comunista"
+      site_name: "Click To Communism"
+    twitter:
+      title: "Click To Communism - Jogo Revolucionário de Cliques"
+      description: "Tome os meios de produção, um clique por vez! Junte-se à revolução comunista global através de cliques."
+      image_alt: "Botão Revolucionário Soviético"
+      creator: "@RomuloOliveira94"
+    application:
+      name: "Click To Communism"
