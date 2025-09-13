@@ -71,12 +71,16 @@ body::before {
   font-size: 24px;
   cursor: pointer;
   border-radius: 100%;
-  transition: background-color 0.3s ease;
+  transition: all 0.15s ease;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y;
 }
 
 .btn:active {
-  transform: translateY(3px);
+  transform: translateY(4px) scale(0.96);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5), 0 1px 5px 0 rgba(0,0,0,0.4);
+  filter: brightness(0.8) contrast(1.2);
 }
 
 .footer {
@@ -115,6 +119,16 @@ body::before {
 }
 
 @media (max-width: 768px) {
+  .btn {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .btn:hover {
+    background-color: #ec0002; /* Remove hover on mobile */
+  }
+
   .footer {
     bottom: 10px;
     right: 10px;
