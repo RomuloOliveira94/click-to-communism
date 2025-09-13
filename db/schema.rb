@@ -10,11 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_09_13_142909) do
+ActiveRecord::Schema[8.0].define(version: 2025_09_13_172658) do
   create_table "clicks", force: :cascade do |t|
     t.string "ip_address"
     t.string "user_agent"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "session_id"
+    t.index ["ip_address"], name: "index_clicks_on_ip_address"
+    t.index ["session_id", "created_at"], name: "index_clicks_on_session_id_and_created_at"
+    t.index ["session_id"], name: "index_clicks_on_session_id"
   end
 end

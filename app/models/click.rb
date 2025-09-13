@@ -3,4 +3,7 @@ class Click < ApplicationRecord
 
   validates :ip_address, presence: true
   validates :user_agent, presence: true
+  validates :session_id, presence: true
+
+  scope :by_session, ->(session_id) { where(session_id: session_id) }
 end

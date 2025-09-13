@@ -2,7 +2,7 @@
   <div class="text-container" >
     <h1><%= t('home.index.title') %></h1>
     <%= turbo_stream_from :clicks %>
-    <%= render "home/clicks_count", clicks_from_ip: @clicks_from_ip, clicks_count: @clicks_count %>
+    <%= render "home/clicks_count", clicks_from_session: @clicks_from_session, clicks_count: @clicks_count %>
   </div>
   <div class="button-container" data-controller="click-sound-effect">
     <%= form_with model: @click, url: clicks_path, method: :post do |f| %>
